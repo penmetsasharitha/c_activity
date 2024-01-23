@@ -1,0 +1,13 @@
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem01.c, line 5.
+(gdb) r
+Starting program: C:\Users\shari\c_activity\set01/a.exe
+[New Thread 8300.0x517c]
+[New Thread 8300.0xb00]
+
+Breakpoint 1, main () at problem01.c:5
+5           printf("sharitha/n");
+(gdb) s
+sharitha/n6         return 0;
+(gdb) s
+7       }(gdb)
