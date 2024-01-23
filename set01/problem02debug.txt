@@ -1,0 +1,24 @@
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem02.c, line 7.
+(gdb) r
+Starting program: C:\Users\shari\c_activity\set01/a.exe
+[New Thread 18600.0x3980]
+[New Thread 18600.0x41b8]
+
+Breakpoint 1, main () at problem02.c:7
+7           printf("enter the frist numder:");
+(gdb) s
+enter the frist numder:8            scanf("%d",& num1);
+(gdb) s
+s
+10          printf("enter the second numder:");
+(gdb) s
+enter the second numder:11          scanf("%d",& num2);
+(gdb) s
+13          sum =num1+num2;
+(gdb) s
+14          printf("sum of %d and %d",num1,num2,sum);
+(gdb) s
+sum of 0 and 1186765615     return 0;
+(gdb) s
+16      }

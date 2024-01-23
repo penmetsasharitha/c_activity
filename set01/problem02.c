@@ -8,7 +8,7 @@ int main()
     scanf("%d",& num1);
 
     printf("enter the second numder:");
-    scnaf("%d",& num2);
+    scanf("%d",& num2);
 
     sum =num1+num2;
     printf("sum of %d and %d",num1,num2,sum);
