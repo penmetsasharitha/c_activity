@@ -2,6 +2,6 @@
 #include <stdio.h>
 int main()
 {
-    printf("sharitha/n");
+   printf("sharitha/n");
     return 0;
 }

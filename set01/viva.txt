@@ -1,0 +1,22 @@
+1.what is # tag?
+it is a header file 
+
+2.what is prepocesser?
+ans)line starting with #.
+
+3.what is gcc?
+ans) It is a c languge compiler that coverts  c sorce file to excutable.
+
+4.what is compiler?
+
+5.what is the mean by perrocesser?
+giving the informatation
+
+
+
+
+
+
+
+
+*intput is also c source and output is also a c source
