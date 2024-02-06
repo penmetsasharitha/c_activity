@@ -12,11 +12,28 @@ ans) It is a c languge compiler that coverts  c sorce file to excutable.
 5.what is the mean by perrocesser?
 giving the informatation
 
+6.what is stdio.h?
+is a headerfile containg function prorotype.
 
+7.what is a function prototype?
+consityts of function name ,return type,parameter.
 
+8.what is use of function prototype?
+it used to compiler to check if calling  function is passing
 
+9.what is int main()?
+int main is the function 
+main return integer 
+main is the starting point of a program
 
+10.what is printf?
+printf is the std libray function use to printf a string of the consol terminal std out 
 
+11.what is meaning / int format string of printf?
+move in a cursor to newline in 
+
+what does return statement do?
+tranfers control form called function to calling function
 
 
 *intput is also c source and output is also a c source
