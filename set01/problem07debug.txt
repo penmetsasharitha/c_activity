@@ -1,0 +1,55 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\shari\c_activity\set01\problem07.exe...done.
+(gdb) b 12
+Breakpoint 1 at 0x401490: file C:\Users\shari\c_activity\set01\problem07.c, line 12.
+(gdb) r
+Starting program: C:\Users\shari\c_activity\set01/problem07.exe
+[New Thread 27704.0x2af4]
+[New Thread 27704.0x3564]
+Enter a positive integer: 3
+
+Breakpoint 1, sum_n_nos (n=3) at C:\Users\shari\c_activity\set01\problem07.c:12
+warning: Source file is more recent than executable.
+12          int sum = 0;
+(gdb) 4
+Undefined command: "4".  Try "help".
+(gdb) s
+13          for (int i = 1; i <= n; i++)
+(gdb) s
+15              sum += i;
+(gdb) s
+13          for (int i = 1; i <= n; i++)
+(gdb) s
+15              sum += i;
+(gdb) s
+13          for (int i = 1; i <= n; i++)
+(gdb) s
+15              sum += i;
+(gdb) s
+13          for (int i = 1; i <= n; i++)
+(gdb) s
+17          return sum;
+(gdb) s
+18      }
+(gdb) s
+main () at C:\Users\shari\c_activity\set01\problem07.c:30
+30          output(n, sum);
+(gdb) s
+output (n=3, sum=6) at C:\Users\shari\c_activity\set01\problem07.c:22
+22          printf("The sum of natural numbers up to %d is: %d\n", n, sum);
+(gdb) s
+The sum of natural numbers up to 3 is: 6
+23      }
+(gdb) s
+main () at C:\Users\shari\c_activity\set01\problem07.c:32
+32          return 0;
+(gdb) s
+33      }(gdb)
