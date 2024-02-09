@@ -1,0 +1,40 @@
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\shari\c_activity\set01\problem06.exe...done.
+(gdb) b 23
+Breakpoint 1 at 0x401505: file C:\Users\shari\c_activity\set01\problem06.c, line 23.
+(gdb) r
+Starting program: C:\Users\shari\c_activity\set01/problem06.exe
+[New Thread 29952.0x7e90]
+[New Thread 29952.0x71c8]
+enter the values
+3
+enter the values
+4
+enter the values
+7
+
+Breakpoint 1, compare (a=3, b=4, c=7, largest=0x61ff10) at C:\Users\shari\c_activity\set01\problem06.c:23
+23        if(a>=b&&a>=c)
+(gdb) s
+27        if(b>=a&&b>=c)
+(gdb) s
+33          *largest=c;
+(gdb) s
+35      }
+(gdb) s
+main () at C:\Users\shari\c_activity\set01\problem06.c:12
+12          output(a,b,c,largest);
+(gdb) s
+output (a=3, b=4, c=7, largest=7) at C:\Users\shari\c_activity\set01\problem06.c:38
+38          printf("the largest of %d,%d,%d is %d\n",a,b,c,largest);
+(gdb) s
+the largest of 3,4,7 is 7
+39      }(gdb)

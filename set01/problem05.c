@@ -17,7 +17,7 @@ int main()
 int input()
 {
     int x;
-    printf("enter two number:");
+    printf("enter a number:");
     scanf("%d",&x);
     return x;
 }
@@ -27,17 +27,15 @@ int compare(int a , int b,int c)
     if(a>=b&&a>=c)
   {
     largest=a;
-    return a;
-  }
-  if(b>=a&&b>=c)
+}
+  else if(b>=a&&b>=c)
   {
     largest=b;
-    return a;
   }
   else{
     largest=c;
-    return c;
   }
+  return largest;
 }
 void output(int a,int b,int c, int largest)
 {
