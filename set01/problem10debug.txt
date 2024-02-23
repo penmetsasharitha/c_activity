@@ -1,0 +1,58 @@
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem10.c, line 11.
+(gdb) r
+Starting program: C:\Users\shari\c_activity\set01/./a.exe 
+[New Thread 29072.0x10c4]
+[New Thread 29072.0x6c9c]
+
+Breakpoint 1, main () at problem10.c:11
+11          input_two_strings(str1,str2);
+(gdb) s
+input_two_strings (str1=0x61feea "a", str2=0x61feb8 "\034"åvü_a") at problem10.c:18
+18          printf("Enter the first string: ");
+(gdb) s
+Enter the first string: 19          scanf("%s",str1);
+(gdb) s
+s
+20          printf("Enter the second string: ");
+(gdb) s
+Enter the second string: 21         scanf("%s",str2);
+(gdb) s
+s
+22      }
+(gdb) s
+main () at problem10.c:12
+12          result=stringcompare(str1,str2);
+(gdb) s
+stringcompare (str1=0x61feea "s", str2=0x61feb8 "s") at problem10.c:25
+25          int i,k=0;
+(gdb) s
+26          for(i=0;str1[i]!=0||str2[i]!=0;i++)
+(gdb) s
+28              if(str1[i]<str2[i])
+(gdb) s
+33              else if (str1[i]>str2[i])
+(gdb) s
+40                  k=0;
+(gdb) s
+26          for(i=0;str1[i]!=0||str2[i]!=0;i++)
+(gdb) s
+43          return k;
+(gdb) s
+44      }
+(gdb) s
+main () at problem10.c:13
+13          output(str1,str2,result);
+(gdb) s
+output (str1=0x61feea "s", str2=0x61feb8 "s", result=0) at problem10.c:47
+47          if(result==-1)
+(gdb) s
+49          else if(result==1)
+(gdb) s
+52          printf("%s and %s are equal",str1,str2);
+(gdb) s
+s and s are equal53     }(gdb) s
+main () at problem10.c:14
+14          return 0;
+(gdb) s
+15      }
