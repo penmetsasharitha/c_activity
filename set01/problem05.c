@@ -23,19 +23,19 @@ int input()
 }
 int compare(int a , int b,int c)
 {
-    int largest;
+    int l;
     if(a>=b&&a>=c)
   {
-    largest=a;
+    l=a;
 }
   else if(b>=a&&b>=c)
   {
-    largest=b;
+    l=b;
   }
   else{
-    largest=c;
+    l=c;
   }
-  return largest;
+  return l;
 }
 void output(int a,int b,int c, int largest)
 {
