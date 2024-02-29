@@ -1,0 +1,53 @@
+(gdb) b main
+Breakpoint 1 at 0x401510: file problem01.c, line 23.
+(gdb) r
+Starting program: C:\Users\shari\c_activity\set02/./a.exe
+[New Thread 21024.0x5ee8]
+[New Thread 21024.0x7968]
+
+Breakpoint 1, main () at problem01.c:23
+23          input(&base, &height);
+(gdb) s
+input (base=0x61ff1c, height=0x61ff18) at problem01.c:4
+4           printf("Enter the base of the triangle: ");
+(gdb) s
+Enter the base of the triangle: 5           scanf("%f", base);
+(gdb) s
+s
+7           printf("Enter the height of the triangle: ");
+(gdb) s
+Enter the height of the triangle: 8         scanf("%f", height);
+(gdb) s
+9       }
+(gdb) s
+main () at problem01.c:24
+24          find_area(base, height, &area);
+(gdb) s
+find_area (base=4.66065143e-039, height=0, area=0x61ff14) at problem01.c:12
+12          *area = (base * height) / 2.0;
+(gdb) s
+13      }
+(gdb) s
+main () at problem01.c:25
+25          output(base, height, area);
+(gdb) ss
+Undefined command: "ss".  Try "help".
+(gdb) s
+output (base=4.66065143e-039, height=0, area=0) at problem01.c:15
+15          printf("Base of the triangle: %.2f\n", base);
+(gdb) s
+Base of the triangle: 0.00
+16          printf("Height of the triangle: %.2f\n", height);
+(gdb) s
+Height of the triangle: 0.00
+17          printf("Area of the triangle: %.2f\n", area);
+(gdb) s
+Area of the triangle: 0.00
+18      }
+(gdb) s
+main () at problem01.c:27
+27          return 0;
+(gdb) ss
+Undefined command: "ss".  Try "help".
+(gdb) s
+28      }(gdb)
